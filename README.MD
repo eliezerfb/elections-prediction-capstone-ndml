@@ -1,4 +1,18 @@
-1) Baixar os seguintes datasets no diretório /Data   
+Projeto de conclusão do curso de Engenheiro de Machine Learning - Udacity.
+
+Tem como objetivo realizar a previsão de deputados estaduais e federais eleitos nas eleições de 2014, utilizando apenas os dados dos candidatos, bens declarados e doações recebidas.
+
+Para mais detalhes, veja o relatório completo no arquivo Capstone Report - Machine Learning Engineer Nanodegree.pdf.
+
+Quanto ao dataset, você pode baixar os dados utilizados diretamente do repositório Kaggle disponível em:
+https://www.kaggle.com/eliezerfb/candidatos-deputado-federal-e-estadual-2014
+Salvar em /Data com o nome: dados_tratados.csv
+
+
+Ou se preferir pode montar o dataset:
+
+
+1) Baixar os seguintes datasets no diretório /Data
 	Candidatos: 
 	http://agencia.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2014.zip
 	
