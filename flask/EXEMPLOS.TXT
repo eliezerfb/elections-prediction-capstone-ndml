@@ -1,0 +1,33 @@
+@app.route("/")
+def hello_world():
+    return "Hello World! <strong>I am learning Flask</strong>", 200
+
+
+@app.route("/nome/<name>")
+def index(name):
+    if name.lower() == 'luci':
+        return "Olá Luciane!", 200
+    elif name.lower() == 'eli':
+        return "Olá Eliézer!", 200
+    elif name.lower() == 'vic':
+        return "Olá Victor!", 200
+    else:
+        return "Not Found!", 404
+
+
+@app.route('/pessoas')
+def pessoas():
+    pessoas = [{'nome': 'Luciane'},
+               {'nome': 'Victor'},
+               {'nome': 'Eliezer'}]
+    return jsonify(pessoas=pessoas, total=len(pessoas))
+
+
+    @app.route('/sera-eleito', methods=['GET', 'POST'])
+    def sera_eleito():
+        if request.method == 'GET':
+            return 'GET!', 200
+        elif request.method == 'POST':
+            return jsonify(request.json), 200
+        else:
+            return request.method
