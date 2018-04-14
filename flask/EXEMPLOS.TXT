@@ -31,3 +31,5 @@ def pessoas():
             return jsonify(request.json), 200
         else:
             return request.method
+
+  
